@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - 'XPNS-*'
+env:
+  service_name: expense_frontend
+
 jobs:
   CI_Steps:
     uses: Sdevops-prac/github-actions/.github/workflows/Developer_branch_CI.yml@main
