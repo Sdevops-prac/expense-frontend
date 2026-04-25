@@ -5,9 +5,11 @@ on:
       - 'v*'
 
 env:
-  service_name: expense_frontend
+  service_name: expense-frontend
 
 
 jobs:
   CI_Steps:
     uses: Sdevops-prac/github-actions/.github/workflows/Release_tags.yml@main
+    with:
+      service_name: expense-frontend
