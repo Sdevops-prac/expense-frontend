@@ -11,5 +11,6 @@ env:
 jobs:
   CI_Steps:
     uses: Sdevops-prac/github-actions/.github/workflows/Release_tags.yml@main
+    secrets: inherit
     with:
       service_name: expense-frontend
