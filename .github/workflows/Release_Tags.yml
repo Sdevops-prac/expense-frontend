@@ -2,7 +2,7 @@ name: Release_tags
 on:
   push:
     tags:
-      - 'v*'
+      - '*'
 
 env:
   service_name: expense-frontend
@@ -10,7 +10,7 @@ env:
 
 jobs:
   CI_Steps:
-    uses: Sdevops-prac/github-actions/.github/workflows/Release_tags.yml@main
+    uses: Sdevops-prac/github-actions/.github/workflows/Release_Tags.yml@main
     secrets: inherit
     with:
       service_name: expense-frontend
